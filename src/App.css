@@ -1,0 +1,96 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping the cards to the next line */
+  gap: 20px; /* Space between cards */
+  justify-content: space-around; /* Padding around the card list */
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: calc(50% - 20px); /* Two cards per row */
+  text-align: center;
+  margin-bottom: 20px; 
+}
+
+
+
+.card-title {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.card-description {
+  padding: 0 10px 10px;
+  color: #555;
+}
+
+/* Additional styles for card with more specific layout */
+.card-content {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  padding: 0px;
+}
+
+.card-img {
+  width: 150px;
+  height: 19vh;/* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: Add border-radius */
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column; /* Stack title and description */
+  text-align: left;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin: 0 15px 5px;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
